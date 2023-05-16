@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">iFoodAssessment</string>
+    <string name="app_name">iFood Calculator</string>
+    <string name="title_activity_main">iFood Calculator</string>
+
+    <!-- Calculator buttons -->
+    <string name="button_numeric_1">1</string>
+    <string name="button_numeric_2">2</string>
+    <string name="button_numeric_3">3</string>
+    <string name="button_numeric_4">4</string>
+    <string name="button_numeric_5">5</string>
+    <string name="button_numeric_6">6</string>
+    <string name="button_numeric_7">7</string>
+    <string name="button_numeric_8">8</string>
+    <string name="button_numeric_9">9</string>
+    <string name="button_numeric_0">0</string>
+    <string name="button_dot">.</string>
+    <string name="button_backspace">&lt;</string>
+    <string name="button_operator_addition">+</string>
+    <string name="button_operator_subtraction">-</string>
+    <string name="button_operator_multiplication">x</string>
+    <string name="button_operator_division">/</string>
+    <string name="button_operator_equal">=</string>
+    <string name="button_clear">Clear</string>
+
+    <string name="fragment_label_calculator">Calculator Fragment</string>
+    <string name="fragment_label_history">History Fragment</string>
 </resources>

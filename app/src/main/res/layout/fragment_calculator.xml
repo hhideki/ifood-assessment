@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtDisplay"
+        style="@style/Display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guidelineDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1234567890" />
+
+    <!-- Keypad: START -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineDisplay">
+
+        <!-- Numeric keys: START -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNum1"
+            style="@style/KeyPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_numeric_1"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineFirstRow"
+            app:layout_constraintEnd_toEndOf="@id/guidelineFirstColumn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/button_numeric_1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNum2"
+            style="@style/KeyPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_numeric_2"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineFirstRow"
+            app:layout_constraintEnd_toEndOf="@id/guidelineSecondColumn"
+            app:layout_constraintStart_toStartOf="@id/guidelineFirstColumn"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/button_numeric_2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNum3"
+            style="@style/KeyPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_numeric_3"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineFirstRow"
+            app:layout_constraintEnd_toEndOf="@id/guidelineThirdColumn"
+            app:layout_constraintStart_toStartOf="@id/guidelineSecondColumn"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/button_numeric_3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNum4"
+            style="@style/KeyPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_numeric_4"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineSecondRow"
+            app:layout_constraintEnd_toEndOf="@id/guidelineFirstColumn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineFirstRow"
+            tools:text="@string/button_numeric_4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNum5"
+            style="@style/KeyPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_numeric_5"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineSecondRow"
+            app:layout_constraintEnd_toEndOf="@id/guidelineSecondColumn"
+            app:layout_constraintStart_toStartOf="@id/guidelineFirstColumn"
+            app:layout_constraintTop_toTopOf="@id/guidelineFirstRow"
+            tools:text="@string/button_numeric_5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNum6"
+            style="@style/KeyPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_numeric_6"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineSecondRow"
+            app:layout_constraintEnd_toEndOf="@id/guidelineThirdColumn"
+            app:layout_constraintStart_toStartOf="@id/guidelineSecondColumn"
+            app:layout_constraintTop_toTopOf="@id/guidelineFirstRow"
+            tools:text="@string/button_numeric_6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNum7"
+            style="@style/KeyPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_numeric_7"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineThirdRow"
+            app:layout_constraintEnd_toEndOf="@id/guidelineFirstColumn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineSecondRow"
+            tools:text="@string/button_numeric_7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNum8"
+            style="@style/KeyPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_numeric_8"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineThirdRow"
+            app:layout_constraintEnd_toEndOf="@id/guidelineSecondColumn"
+            app:layout_constraintStart_toStartOf="@id/guidelineFirstColumn"
+            app:layout_constraintTop_toTopOf="@id/guidelineSecondRow"
+            tools:text="@string/button_numeric_8" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNum9"
+            style="@style/KeyPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_numeric_9"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineThirdRow"
+            app:layout_constraintEnd_toEndOf="@id/guidelineThirdColumn"
+            app:layout_constraintStart_toStartOf="@id/guidelineSecondColumn"
+            app:layout_constraintTop_toTopOf="@id/guidelineSecondRow"
+            tools:text="@string/button_numeric_9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNum0"
+            style="@style/KeyPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_numeric_0"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineFourthRow"
+            app:layout_constraintEnd_toEndOf="@id/guidelineFirstColumn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineThirdRow"
+            tools:text="@string/button_numeric_0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDot"
+            style="@style/KeyPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_dot"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineFourthRow"
+            app:layout_constraintEnd_toEndOf="@id/guidelineSecondColumn"
+            app:layout_constraintStart_toStartOf="@id/guidelineFirstColumn"
+            app:layout_constraintTop_toTopOf="@id/guidelineThirdRow"
+            tools:text="@string/button_dot" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBackspace"
+            style="@style/KeyPad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_backspace"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineFourthRow"
+            app:layout_constraintEnd_toEndOf="@id/guidelineThirdColumn"
+            app:layout_constraintStart_toStartOf="@id/guidelineSecondColumn"
+            app:layout_constraintTop_toTopOf="@id/guidelineThirdRow"
+            tools:text="@string/button_backspace" />
+        <!-- Numeric keys: END -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnClear"
+            style="@style/KeyPad.Clear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_clear"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guidelineThirdColumn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineFourthRow"
+            tools:text="@string/button_clear" />
+
+        <!-- Operator keys: START -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOperatorDivision"
+            style="@style/KeyPad.Operator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_operator_division"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineFirstRow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guidelineThirdColumn"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/button_operator_division" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOperatorMultiplication"
+            style="@style/KeyPad.Operator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_operator_multiplication"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineSecondRow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guidelineThirdColumn"
+            app:layout_constraintTop_toTopOf="@id/guidelineFirstRow"
+            tools:text="@string/button_operator_multiplication" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOperatorSubtraction"
+            style="@style/KeyPad.Operator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_operator_subtraction"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineThirdRow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guidelineThirdColumn"
+            app:layout_constraintTop_toTopOf="@id/guidelineSecondRow"
+            tools:text="@string/button_operator_subtraction" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOperatorAddition"
+            style="@style/KeyPad.Operator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_operator_addition"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineFourthRow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guidelineThirdColumn"
+            app:layout_constraintTop_toTopOf="@id/guidelineThirdRow"
+            tools:text="@string/button_operator_addition" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOperatorEqual"
+            style="@style/KeyPad.Operator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_operator_equal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guidelineThirdColumn"
+            app:layout_constraintTop_toTopOf="@id/guidelineFourthRow"
+            tools:text="@string/button_operator_equal" />
+        <!-- Operator keys: END -->
+
+        <!-- Guidelines: START -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineFirstColumn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineSecondColumn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineThirdColumn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineFirstRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineSecondRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineThirdRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineFourthRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
+        <!-- Guidelines: END -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Keypad: END -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
