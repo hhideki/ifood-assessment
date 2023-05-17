@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="KeyPad" parent="TextAppearance.AppCompat.Widget.Button">
-        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
         <item name="android:textSize">32sp</item>
     </style>
 
@@ -10,7 +10,6 @@
     </style>
 
     <style name="KeyPad.Clear">
-        <item name="android:background">?attr/selectableItemBackground</item>
         <item name="android:foreground">#5f66</item>
     </style>
 
